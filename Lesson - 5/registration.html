@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENSHOP - Registration</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="page">
+    <section class="registration">
+        <h1 class="registration__title">Реєстрація</h1>
+        <p class="registration__subtitle">Створіть обліковий запис у GREENSHOP</p>
+
+        <form class="registration__form" action="#" method="post">
+            <label class="form__field">
+                <span class="form__label">Ім’я</span>
+                <input class="form__input" type="text" name="first_name" placeholder="Введіть ваше ім’я">
+            </label>
+
+            <label class="form__field">
+                <span class="form__label">Email</span>
+                <input class="form__input" type="email" name="email" placeholder="Введіть ваш email">
+            </label>
+
+            <label class="form__field">
+                <span class="form__label">Пароль</span>
+                <input class="form__input" type="password" name="password" placeholder="Придумайте пароль">
+            </label>
+
+            <label class="form__field">
+                <span class="form__label">Підтвердження пароля</span>
+                <input class="form__input" type="password" name="password_confirm" placeholder="Повторіть пароль">
+            </label>
+
+            <label class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="terms">
+                <span class="form__checkbox-text">Я погоджуюсь з умовами використання</span>
+            </label>
+
+            <button class="form__submit" type="submit">Зареєструватися</button>
+        </form>
+
+        <div class="registration__divider">
+            <span class="registration__divider-line"></span>
+            <span class="registration__divider-text">або</span>
+            <span class="registration__divider-line"></span>
+        </div>
+
+        <div class="social">
+            <button class="social-btn social-btn--google" type="button">
+                <img src="images/google.png" alt="Google logo" class="icon-google">
+                <span>Продовжити з Google</span>
+            </button>
+
+            <button class="social-btn social-btn--facebook" type="button">
+                <img src="images/facebook.png" alt="Facebook logo" class="icon-facebook">
+                <span>Продовжити з Facebook</span>
+            </button>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

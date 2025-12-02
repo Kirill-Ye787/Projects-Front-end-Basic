@@ -1,0 +1,21 @@
+body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;}
+.registration{width:400px;background:#fff;padding:30px 30px 40px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08);}
+.registration__title{text-align:center;font-size:24px;margin-bottom:10px;font-weight:700;}
+.registration__subtitle{text-align:center;color:#777;margin-bottom:25px;}
+.registration__form{display:flex;flex-direction:column;gap:15px;}
+.form__field{display:flex;flex-direction:column;gap:5px;}
+.form__label{color:#555;font-size:14px;}
+.form__input{padding:10px 12px;font-size:14px;border-radius:6px;border:1px solid #ccc;}
+.form__input:focus{outline:none;border-color:#46a358;}
+.form__checkbox{display:flex;align-items:center;gap:8px;font-size:13px;}
+.form__submit{margin-top:10px;padding:12px;width:100%;background:#46a358;color:#fff;border:none;border-radius:6px;font-size:16px;font-weight:600;cursor:pointer;}
+.form__submit:hover{background:#3c8a4c;}
+.registration__divider{display:flex;align-items:center;gap:10px;justify-content:center;margin:25px 0 15px;}
+.registration__divider-line{flex:1;height:1px;background:#e0e0e0;}
+.registration__divider-text{color:#777;font-size:12px;}
+.social{display:flex;flex-direction:column;gap:10px;align-items:center;}
+.social-btn{width:300px;height:40px;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:6px;border:1px solid #ddd;cursor:pointer;font-size:14px;font-weight:500;padding:0 10px;}
+.social-btn--google{background:#fff;color:#222;}
+.social-btn--facebook{background:#1877f2;color:#fff;border-color:#1877f2;}
+.icon-google,.icon-facebook{width:22px;height:22px;object-fit:contain;border-radius:50%;background:#fff;}
