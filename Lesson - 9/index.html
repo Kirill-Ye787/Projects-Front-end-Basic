@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>All Plants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="tabs">
+            <a href="#" class="tab tab--active">All Plants</a>
+            <a href="#" class="tab">New Arrivals</a>
+            <a href="#" class="tab">Sale</a>
+        </nav>
+
+        <div class="sorting">
+            <span class="sorting-label">Short by:</span>
+            <button class="sorting-btn">
+                Default sorting
+                <span class="sorting-arrow"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PRODUCTS -->
+    <main class="products">
+
+        <!-- Card 1 -->
+        <article class="product-card">
+            <div class="product-image-wrapper">
+                <img src="images/barberton-daisy.png"
+                     alt="Barberton Daisy"
+                     class="product-image">
+            </div>
+
+            <h3 class="product-title">Barberton Daisy</h3>
+            <p class="product-price">$119.00</p>
+        </article>
+
+        <!-- Card 2 (hover icons) -->
+        <article class="product-card product-card--hover">
+            <div class="product-image-wrapper">
+                <img src="images/angel-wing-begonia.png"
+                     alt="Angel Wing Begonia"
+                     class="product-image">
+
+                <!-- Иконки при hover -->
+                <div class="product-actions">
+                    <button class="icon-btn" aria-label="Add to cart">🛒</button>
+                    <button class="icon-btn" aria-label="Add to wishlist">♡</button>
+                    <button class="icon-btn" aria-label="View product">🔍</button>
+                </div>
+            </div>
+
+            <h3 class="product-title">Angel Wing Begonia</h3>
+            <p class="product-price">$169.00</p>
+        </article>
+
+        <!-- Card 3 (sale badge) -->
+        <article class="product-card product-card--sale">
+            <div class="product-image-wrapper">
+                <img src="images/african-violet.png"
+                     alt="African Violet"
+                     class="product-image">
+
+                <span class="badge-sale">13% OFF</span>
+            </div>
+
+            <h3 class="product-title">African Violet</h3>
+            <p class="product-price">$199.00</p>
+        </article>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+
+

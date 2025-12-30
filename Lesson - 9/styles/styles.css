@@ -1,0 +1,174 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.page {
+    max-width: 1050px;
+    margin: 60px auto 80px;
+    padding: 0 40px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 32px;
+}
+
+.tab {
+    text-decoration: none;
+    color: #555555;
+    position: relative;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.tab--active {
+    color: #46A358;
+    font-weight: 600;
+}
+
+.tab--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #46A358;
+}
+
+/* Sorting */
+.sorting {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #727272;
+}
+
+.sorting-btn {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.sorting-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+    transform: rotate(-45deg);
+    margin-top: 2px;
+}
+
+/* ===== PRODUCTS GRID ===== */
+.products {
+    display: flex;
+    column-gap: 55px;
+}
+
+/* Одна карточка */
+.product-card {
+    flex: 1 1 0;
+    font-size: 14px;
+}
+
+/* зелёная полоска у второй карточки при hover */
+.product-card--hover:hover {
+    border-top: 3px solid #46A358;
+}
+
+/* ===== БЛОК С КАРТИНКОЙ ===== */
+.product-image-wrapper {
+    position: relative;
+    background: #F8F8F8;
+    height: 300px;            /* визуально как в макете */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===== ТЕКСТ ПОД КАРТИНКОЙ ===== */
+.product-title {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.product-price {
+    color: #46A358;
+    font-weight: 700;
+}
+
+/* ===== БЕЙДЖ СКИДКИ (3-я карточка) ===== */
+.badge-sale {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #46A358;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+/* ===== ИКОНКИ НА HOVER (2-я карточка) ===== */
+.product-actions {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* показываем иконки + тень при hover */
+.product-card--hover:hover .product-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-card--hover:hover .product-image-wrapper {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
