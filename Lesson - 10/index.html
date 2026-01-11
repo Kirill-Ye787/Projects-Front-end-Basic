@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREENSHOP — Home</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<!-- Layout reference: Header.png -->
+<header class="header">
+    <div class="container header__row">
+
+        <a class="logo" href="index.html" aria-label="Greenshop home">
+            <span class="logo__icon" aria-hidden="true"></span>
+            <span class="logo__text">GREENSHOP</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+
+                <!-- Dropdown 2 levels (Position only) -->
+                <li class="nav__item nav__item--dropdown">
+                    <a class="nav__link nav__link--active" href="#" aria-haspopup="true">
+                        Plant Care
+                    </a>
+
+                    <!-- Level 1 (down): Frame-1.png -->
+                    <ul class="dropdown dropdown--level1" aria-label="Plant Care dropdown">
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Drainage</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Fungicides</a></li>
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Fertilizer</a></li>
+
+                        <!-- Level 2 trigger -->
+                        <li class="dropdown__item dropdown__item--has-submenu">
+                            <a class="dropdown__link dropdown__link--priming" href="#">
+                                Priming
+                                <span class="arrow" aria-hidden="true">›</span>
+                            </a>
+
+                            <!-- Level 2 (right): Frame-2.png -->
+                            <ul class="dropdown dropdown--level2" aria-label="Priming submenu">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">Universal</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">For Ficus</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">For Cacti</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">For Citrus</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">For those in bloom</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">For Orchids</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__item"><a class="nav__link" href="#">Blogs</a></li>
+            </ul>
+        </nav>
+
+        <a class="btn-login" href="registration.html">
+            <span class="btn-login__icon" aria-hidden="true">↪</span>
+            Login
+        </a>
+    </div>
+</header>
+
+<!-- Layout reference: Main-Banner.png -->
+<main>
+    <section class="hero">
+        <div class="container hero__row">
+
+            <div class="hero__content">
+                <p class="hero__top">WELCOME TO GREENSHOP</p>
+
+                <h1 class="hero__title">
+                    LET’S MAKE A<br />
+                    BETTER <span>PLANET</span>
+                </h1>
+
+                <p class="hero__text">
+                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                    Use our plants to create a unique Urban Jungle. Order your favorite plants!
+                </p>
+
+                <a class="hero__btn" href="#">SHOP NOW</a>
+            </div>
+
+            <!-- 2 plant layouts: Plant-Large + Plant-Small -->
+            <div class="hero__visual" aria-hidden="true">
+                <img class="plant plant--large" src="images/Plant-Large.png" alt="" />
+                <img class="plant plant--small" src="images/Plant-Small.png" alt="" />
+            </div>
+
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
