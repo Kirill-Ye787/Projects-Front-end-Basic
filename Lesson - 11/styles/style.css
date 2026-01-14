@@ -1,0 +1,171 @@
+/* ===== Reset ===== */
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{margin:0;font-family:Arial, sans-serif;color:#3d3d3d;background:#ffffff;}
+h1,h2,h3,h4,h5,p{margin:0;}
+ul{list-style:none;margin:0;padding:0;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;height:auto;display:block;}
+
+/* ===== Footer ===== */
+.footer{background:#fbfbfb;}
+.footer__container{width:1200px;margin:0 auto;background:#fbfbfb;}
+
+/* TOP */
+.footer-top{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 2.1fr;
+  column-gap:0;
+  padding:33px 25px 28px;
+  border-bottom:1px solid #e5e5e5;
+}
+.service{
+  padding:0 25px 0 0;
+  position:relative;
+}
+.service:not(:nth-child(4))::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:10px;
+  bottom:10px;
+  width:1px;
+  background:#e5e5e5;
+}
+.service:nth-child(3){padding-right:25px;}
+.newsletter{
+  padding-left:32px;
+  position:relative;
+}
+.newsletter::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:10px;
+  bottom:10px;
+  width:1px;
+  background:#e5e5e5;
+}
+.service__icon{
+  width:77px;
+  height:77px;
+  object-fit:contain;
+  margin:0 0 14px 0;
+}
+.service__title{font-size:17px;font-weight:700;margin-bottom:9px;}
+.service__text{font-size:14px;line-height:22px;color:#727272;max-width:190px;}
+
+.newsletter__title{font-size:18px;font-weight:700;margin-bottom:18px;}
+.newsletter__form{
+  display:flex;
+  width:354px;
+  height:40px;
+  margin-bottom:17px;
+  box-shadow:0 0 20px rgba(0,0,0,.06);
+  border-radius:6px;
+  overflow:hidden;
+  background:#fff;
+}
+.newsletter__input{
+  flex:1;
+  border:0;
+  padding:0 13px;
+  font-size:13px;
+  outline:none;
+}
+.newsletter__input::placeholder{color:#a5a5a5;}
+.newsletter__btn{
+  width:85px;
+  border:0;
+  background:#46a358;
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+}
+.newsletter__text{font-size:13px;line-height:22px;color:#727272;max-width:370px;}
+
+/* GREEN BAR */
+.footer-bar{
+  height:88px;
+  padding:0 23px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+}
+.footer-bar__logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:250px;
+}
+.footer-bar__logo-icon{
+  width: 35px;
+  height: 35px;
+  background: url("../images/logo-icon.png") center/contain no-repeat;
+  flex: 0 0 35px;
+}
+.footer-bar__logo-text{font-size:17px;font-weight:800;letter-spacing:.4px;color:#46a358;}
+
+.footer-bar__item{display:flex;align-items:center;gap:10px;font-size:14px;color:#3d3d3d;}
+.footer-bar__item:nth-child(2){width:290px;}
+.footer-bar__item:nth-child(3){width:250px;}
+.footer-bar__item:nth-child(4){width:200px;justify-content:flex-end;}
+.footer-bar__icon{width:20px;height:20px;}
+.footer-bar__text{line-height:20px;}
+
+/* BOTTOM */
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  padding:33px 25px 30px;
+  background:#fbfbfb;
+}
+.footer-col{width:220px;}
+.footer-col__title{font-size:18px;font-weight:700;margin-bottom:12px;}
+.footer-col__list{display:flex;flex-direction:column;gap:10px;}
+.footer-col__link{font-size:14px;color:#3d3d3d;}
+.footer-col__link:hover{color:#46a358;}
+
+.footer-col--social{width:270px;}
+.social{display:flex;gap:10px;margin-bottom:20px;}
+.social__item{
+  width:30px;height:30px;
+  border:1px solid #46a358;
+  border-radius:4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.social__item svg{
+  width:16px;height:16px;
+  fill:#46a358;
+}
+.pay__title{font-size:18px;font-weight:700;margin-bottom:12px;}
+.pay__strip{height:22px;width:auto;}
+
+/* COPY */
+.footer-copy{
+  text-align:center;
+  font-size:14px;
+  color:#727272;
+  padding:14px 0 18px;
+  border-top:1px solid #e5e5e5;
+  background:#fbfbfb;
+}
+
+
+/* === Contact images in green bar (from Figma export) === */
+.footer-bar__item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.footer-bar__img{
+  display:block;
+  height: 44px; /* fits exported frames */
+  width: auto;
+}
+.footer-bar__item--address .footer-bar__img{ height: 48px; }
