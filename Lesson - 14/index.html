@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenShop — Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<!-- PRELOADER OVERLAY (DZ 13.1) -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__card" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="preloader__title">Loading…</p>
+    <p class="preloader__sub">Opening registration</p>
+    <div class="dots" aria-hidden="true">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__row">
+    <a class="logo" href="index.html">
+      <img src="images/ui/logo.png" alt="GreenShop logo" />
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link is-active" href="index.html">Home</a>
+      <a class="nav__link" href="#shop">Shop</a>
+      <a class="nav__link" href="#care">Plant Care</a>
+      <a class="nav__link" href="#blog">Blogs</a>
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" type="button" aria-label="Search">
+        <svg class="icon"><use href="images/sprite.svg#icon-search"></use></svg>
+      </button>
+
+      <button class="icon-btn icon-btn--cart" type="button" aria-label="Cart">
+        <svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg>
+        <span class="badge">6</span>
+      </button>
+
+      <a class="btn btn--primary" href="registration.html" id="goReg">
+        <svg class="icon icon--white"><use href="images/sprite.svg#icon-user"></use></svg>
+        Login
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="kicker">WELCOME TO GREENSHOP</p>
+        <h1 class="hero__title">LET’S MAKE A<br><span>BETTER PLANET</span></h1>
+        <p class="hero__text">
+          We are an online plant shop offering a wide range of cheap and trendy plants.
+          Use our plants to create an unique Urban Jungle. Order your favorite plants!
+        </p>
+        <a class="btn btn--primary btn--lg" href="#shop">SHOP NOW</a>
+      </div>
+
+      <div class="hero__media">
+        <img class="plant plant--big" src="images/ui/plant-big.png" alt="Big plant" />
+        <img class="plant plant--small" src="images/ui/plant-small.png" alt="Small plant" />
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="shop">
+    <div class="container catalog__grid">
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3 class="side-title">Categories</h3>
+          <ul class="side-list">
+            <li><a class="side-link is-active" href="#">House Plants <span>(33)</span></a></li>
+            <li><a class="side-link" href="#">Potter Plants <span>(12)</span></a></li>
+            <li><a class="side-link" href="#">Seeds <span>(65)</span></a></li>
+            <li><a class="side-link" href="#">Small Plants <span>(39)</span></a></li>
+            <li><a class="side-link" href="#">Big Plants <span>(23)</span></a></li>
+            <li><a class="side-link" href="#">Succulents <span>(17)</span></a></li>
+            <li><a class="side-link" href="#">Terrariums <span>(19)</span></a></li>
+            <li><a class="side-link" href="#">Gardening <span>(13)</span></a></li>
+            <li><a class="side-link" href="#">Accessories <span>(18)</span></a></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3 class="side-title">Price Range</h3>
+          <div class="range">
+            <div class="range__line"></div>
+            <div class="range__fill"></div>
+            <div class="range__dot"></div>
+          </div>
+          <p class="muted">Price: <b>$39</b> - <b>$1230</b></p>
+          <button class="btn btn--primary btn--sm" type="button">Filter</button>
+
+          <h3 class="side-title side-title--mt">Size</h3>
+          <ul class="side-list">
+            <li><a class="side-link" href="#">Small <span>(119)</span></a></li>
+            <li><a class="side-link" href="#">Medium <span>(86)</span></a></li>
+            <li><a class="side-link" href="#">Large <span>(78)</span></a></li>
+          </ul>
+        </div>
+
+        <div class="sale">
+          <img src="images/ui/super-sale.png" alt="Super Sale">
+        </div>
+      </aside>
+
+      <section class="products" id="care">
+        <div class="products__top">
+          <div class="tabs">
+            <button class="tab is-active" type="button">All Plants</button>
+            <button class="tab" type="button">New Arrivals</button>
+            <button class="tab" type="button">Sale</button>
+          </div>
+
+          <div class="sort">
+            <span>Short by:</span>
+            <button class="sort__btn" type="button">Default sorting</button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!-- 9 product cards -->
+          <article class="product">
+            <div class="product__media">
+              <img src="images/products/product-1.png" alt="Barberton Daisy" />
+              <div class="product__hover">
+                <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+              </div>
+            </div>
+            <h4 class="product__name">Barberton Daisy</h4>
+            <p class="product__price">$119.00</p>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img src="images/products/product-2.png" alt="Angel Wing Begonia" />
+              <div class="product__hover">
+                <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+              </div>
+            </div>
+            <h4 class="product__name">Angel Wing Begonia</h4>
+            <p class="product__price">$169.00</p>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <span class="tag">13% OFF</span>
+              <img src="images/products/product-3.png" alt="African Violet" />
+              <div class="product__hover">
+                <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+                <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+              </div>
+            </div>
+            <h4 class="product__name">African Violet</h4>
+            <p class="product__price">$199.00 <span class="old">$229.00</span></p>
+          </article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-4.png" alt="Beach Spider Lily"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Beach Spider Lily</h4><p class="product__price">$129.00</p></article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-5.png" alt="Blushing Bromeliad"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Blushing Bromeliad</h4><p class="product__price">$139.00</p></article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-6.png" alt="Aluminum Plant"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Aluminum Plant</h4><p class="product__price">$179.00</p></article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-7.png" alt="Bird's Nest Fern"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Bird's Nest Fern</h4><p class="product__price">$99.00</p></article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-8.png" alt="Broadleaf Lady Palm"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Broadleaf Lady Palm</h4><p class="product__price">$59.00</p></article>
+
+          <article class="product"><div class="product__media"><img src="images/products/product-9.png" alt="Chinese Evergreen"/><div class="product__hover">
+            <button class="mini-btn" type="button" aria-label="Add to cart"><svg class="icon"><use href="images/sprite.svg#icon-cart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Add to wishlist"><svg class="icon"><use href="images/sprite.svg#icon-heart"></use></svg></button>
+            <button class="mini-btn" type="button" aria-label="Quick view"><svg class="icon"><use href="images/sprite.svg#icon-eye"></use></svg></button>
+          </div></div><h4 class="product__name">Chinese Evergreen</h4><p class="product__price">$39.00</p></article>
+        </div>
+
+        <div class="pagination">
+          <a class="page is-active" href="#">1</a>
+          <a class="page" href="#">2</a>
+          <a class="page" href="#">3</a>
+          <a class="page" href="#">4</a>
+          <a class="page page--arrow" href="#">›</a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Gradient block (HW requirement) -->
+  <section class="promo">
+    <div class="container promo__grid">
+      <article class="promo-card">
+        <img class="promo-card__img" src="images/ui/promo-left.png" alt="Promo 1" />
+        <div class="promo-card__body">
+          <h3>SUMMER CACTUS<br>&amp; SUCCULENTS</h3>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          <a class="btn btn--ghost" href="#shop">Find More</a>
+        </div>
+      </article>
+
+      <article class="promo-card">
+        <img class="promo-card__img" src="images/ui/promo-right.png" alt="Promo 2" />
+        <div class="promo-card__body">
+          <h3>STYLING TRENDS<br>&amp; MUCH MORE</h3>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          <a class="btn btn--ghost" href="#shop">Find More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2 class="section-title">Our Blog Posts</h2>
+      <p class="section-subtitle">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+
+      <div class="blog-grid">
+        <article class="post">
+          <img class="post__img" src="images/blog/blog-1.png" alt="Blog 1">
+          <div class="post__body">
+            <p class="post__meta">September 12 | Read in 6 minutes</p>
+            <h4 class="post__title">Cactus & Succulent Care Tips</h4>
+            <p class="post__text">Cacti are succulents are easy care plants for any home or patio.</p>
+            <a class="post__link" href="#">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img class="post__img" src="images/blog/blog-2.png" alt="Blog 2">
+          <div class="post__body">
+            <p class="post__meta">September 13 | Read in 6 minutes</p>
+            <h4 class="post__title">Top 10 Succulents for Your Home</h4>
+            <p class="post__text">Cacti are succulents are easy care plants for any home or patio.</p>
+            <a class="post__link" href="#">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img class="post__img" src="images/blog/blog-3.png" alt="Blog 3">
+          <div class="post__body">
+            <p class="post__meta">September 14 | Read in 6 minutes</p>
+            <h4 class="post__title">Cacti & Succulent Care Tips</h4>
+            <p class="post__text">Cacti are succulents are easy care plants for any home or patio.</p>
+            <a class="post__link" href="#">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img class="post__img" src="images/blog/blog-4.png" alt="Blog 4">
+          <div class="post__body">
+            <p class="post__meta">September 15 | Read in 6 minutes</p>
+            <h4 class="post__title">Best Houseplants Room by Room</h4>
+            <p class="post__text">Cacti are succulents are easy care plants for any home or patio.</p>
+            <a class="post__link" href="#">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__divider">
+      <img src="images/ui/divider.png" alt="">
+    </div>
+
+  <div class="footer__features">
+    <!-- Features + newsletter strip (as in the макет) -->
+    <img src="images/ui/payments.png" alt="features">
+  </div>
+
+    <div class="footer__main">
+      <div class="footer__brand">
+        <img class="footer__logo" src="images/ui/logo.png" alt="GreenShop">
+      </div>
+
+      <div class="footer__contacts">
+        <div class="footer__contact">
+          <svg class="footer__icon"><use href="images/sprite.svg#i-location"></use></svg>
+          <span>70 West Buckingham Ave. Farmingdale, NY 11735</span>
+        </div>
+        <a class="footer__contact footer__contact--link" href="mailto:contact@greenshop.com">
+          <svg class="footer__icon"><use href="images/sprite.svg#i-mail"></use></svg>
+          <span>contact@greenshop.com</span>
+        </a>
+        <a class="footer__contact footer__contact--link" href="tel:+8801911717490">
+          <svg class="footer__icon"><use href="images/sprite.svg#i-phone"></use></svg>
+          <span>+88 01911 717 490</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <!-- оставляем тексты ссылок живыми, но фон по макету -->
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>My Account</h4>
+          <a href="#">My Account</a>
+          <a href="#">Our stores</a>
+          <a href="#">Contact us</a>
+          <a href="#">Career</a>
+          <a href="#">Specials</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Help &amp; Guide</h4>
+          <a href="#">Help Center</a>
+          <a href="#">How to Buy</a>
+          <a href="#">Shipping &amp; Delivery</a>
+          <a href="#">Product Policy</a>
+          <a href="#">How to Return</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Categories</h4>
+          <a href="#">House Plants</a>
+          <a href="#">Potter Plants</a>
+          <a href="#">Seeds</a>
+          <a href="#">Small Plants</a>
+          <a href="#">Accessories</a>
+        </div>
+
+        <div class="footer__col footer__col--social">
+          <h4>Social Media</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="facebook"><svg class="social__icon"><use href="images/sprite.svg#s-facebook"></use></svg></a>
+            <a href="#" aria-label="instagram"><svg class="social__icon"><use href="images/sprite.svg#s-instagram"></use></svg></a>
+            <a href="#" aria-label="twitter"><svg class="social__icon"><use href="images/sprite.svg#s-twitter"></use></svg></a>
+            <a href="#" aria-label="linkedin"><svg class="social__icon"><use href="images/sprite.svg#s-linkedin"></use></svg></a>
+            <a href="#" aria-label="youtube"><svg class="social__icon"><use href="images/sprite.svg#s-youtube"></use></svg></a>
+          </div>
+
+          <h4 class="footer__accept">We accept</h4>
+          <img class="footer__payments" src="images/ui/features-strip.png" alt="payments">
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="footer__copy">
+      <p>© 2021 GreenShop. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+  // DZ 13.1 (optional): show CSS preloader before перехода на registration
+  const preloader = document.getElementById('preloader');
+  const goReg = document.getElementById('goReg');
+
+  if (goReg && preloader) {
+    goReg.addEventListener('click', (e) => {
+      e.preventDefault();
+      preloader.classList.add('is-active');
+      // небольшая задержка, чтобы анимация была видна
+      setTimeout(() => {
+        window.location.href = 'registration.html';
+      }, 650);
+    });
+  }
+</script>
+
+</body>
+</html>
