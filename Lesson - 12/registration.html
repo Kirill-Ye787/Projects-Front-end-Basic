@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenShop — Registration</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__row">
+    <a class="logo" href="index.html">
+      <img src="images/ui/logo.png" alt="GreenShop logo" />
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="index.html#shop">Shop</a>
+      <a class="nav__link" href="index.html#care">Plant Care</a>
+      <a class="nav__link" href="index.html#blog">Blogs</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="registration.html">
+        <svg class="icon icon--white"><use href="images/sprite.svg#icon-user"></use></svg>
+        Login
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="auth">
+  <div class="container">
+    <section class="auth-card">
+      <h1 class="auth-title">Registration</h1>
+      <p class="muted">Enter your details to create account.</p>
+
+      <form class="form" action="#">
+        <label class="field">
+          <span>Name</span>
+          <input type="text" required placeholder="Your name" />
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" required placeholder="example@mail.com" />
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input type="password" required placeholder="••••••••" />
+        </label>
+
+        <button class="btn btn--primary btn--full" type="submit">
+          <svg class="icon icon--white"><use href="images/sprite.svg#icon-user"></use></svg>
+          Create account
+        </button>
+
+        <p class="muted" style="margin-top:12px;">Back to <a class="link" href="index.html">Home</a></p>
+      </form>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>
